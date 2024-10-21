@@ -1,7 +1,10 @@
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
 
-function App() {
-  return <h1>React app by Muhammad Anas</h1>;
-}
-
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <h1>Made By Muhammad Anas</h1>
+  </StrictMode>
+);
