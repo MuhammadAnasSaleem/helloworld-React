@@ -8,7 +8,22 @@ function App() {
   function handleClick() {
     setCount(count + 1);
   }
-  return <button onClick={handleClick}>you clicked {count} time</button>;
+  return (
+    <>
+      <div
+        className="bg-slate-900 text-white uppercase h-screen flex justify-center items-center flex-col-reverse
+      "
+      >
+        <button
+          className="border-slate-100 border p-4 rounded-full"
+          onClick={handleClick}
+        >
+          you clicked {count} time
+        </button>
+        <h1 className=" text-white text-center text-2xl">Hello Tailwind</h1>
+      </div>
+    </>
+  );
 }
 
 createRoot(document.getElementById("root")).render(
